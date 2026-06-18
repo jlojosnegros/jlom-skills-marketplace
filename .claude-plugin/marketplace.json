@@ -1,0 +1,21 @@
+{
+  "name": "jlom-skills",
+  "owner": {
+    "name": "Jose Luis Ojosnegros",
+    "email": "jl.ojosnegros.manchon@gmail.com"
+  },
+  "metadata": {
+    "description": "Personal Claude Code skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "adversarial-review",
+      "source": "./plugins/adversarial-review",
+      "description": "Adversarially audit a finished report, design doc, PR/MR review, or JIRA analysis before you act on it. Catches fabricated facts, unverified numbers, partially-read or unreliable sources, and self-referential claims (the agent citing its own earlier output as truth).",
+      "version": "1.0.0",
+      "category": "review",
+      "keywords": ["review", "audit", "verification", "adversarial", "qa"]
+    }
+  ]
+}
