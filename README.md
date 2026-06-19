@@ -42,6 +42,7 @@ claude plugin install adversarial-review@jlom-skills
 | Plugin                                             | What it does                                                                                                                                                                                                                                                                               |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [`adversarial-review`](plugins/adversarial-review) | Adversarially audits a finished report, design doc, PR/MR review, or JIRA analysis **before you act on it** — catching fabricated facts, unverified numbers, partially-read or unreliable sources, and self-referential claims (the agent treating its own earlier JIRA comment as truth). |
+| [`agentdoc`](plugins/agentdoc)                     | Generates and maintains AI-agent-oriented documentation for any repository — a lightweight `CLAUDE.md` plus a deep `agent-overlay.md`, with drift detection, freshness scoring, and protection for human-written sections. Ships a CI health-check script.                                 |
 
 ## Repository layout
 
@@ -50,14 +51,18 @@ claude plugin install adversarial-review@jlom-skills
 ├── .claude-plugin/
 │   └── marketplace.json        # Catalog Claude Code reads to discover plugins
 ├── plugins/
-│   └── adversarial-review/
-│       ├── .claude-plugin/
-│       │   └── plugin.json      # Plugin manifest
-│       ├── skills/
-│       │   └── adversarial-review/
-│       │       ├── SKILL.md      # The skill itself
-│       │       └── references/
-│       │           └── patterns.md
+│   ├── adversarial-review/
+│   │   ├── .claude-plugin/plugin.json
+│   │   ├── skills/adversarial-review/
+│   │   │   ├── SKILL.md
+│   │   │   └── references/patterns.md
+│   │   ├── README.md
+│   │   └── CHANGELOG.md
+│   └── agentdoc/
+│       ├── .claude-plugin/plugin.json
+│       ├── skills/agentdoc/
+│       │   ├── SKILL.md
+│       │   └── scripts/agentdoc-check.sh
 │       └── README.md
 ├── LICENSE
 └── README.md

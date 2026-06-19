@@ -16,6 +16,14 @@
       "version": "1.0.0",
       "category": "review",
       "keywords": ["review", "audit", "verification", "adversarial", "qa"]
+    },
+    {
+      "name": "agentdoc",
+      "source": "./plugins/agentdoc",
+      "description": "Generate and maintain AI-agent-oriented documentation for any repository: a lightweight CLAUDE.md plus a deep agent-overlay.md, with drift detection, freshness scoring, and protection for human-written sections.",
+      "version": "1.0.0",
+      "category": "documentation",
+      "keywords": ["documentation", "claude-md", "agent-overlay", "drift", "ci"]
     }
   ]
 }

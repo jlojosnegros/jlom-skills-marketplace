@@ -1,0 +1,10 @@
+{
+  "name": "agentdoc",
+  "version": "1.0.0",
+  "description": "Generate and maintain AI-agent-oriented documentation for any repository: a lightweight CLAUDE.md plus a deep agent-overlay.md, with drift detection, freshness scoring, and protection for human-written sections.",
+  "author": {
+    "name": "Jose Luis Ojosnegros",
+    "email": "jl.ojosnegros.manchon@gmail.com"
+  },
+  "keywords": ["documentation", "claude-md", "agent-overlay", "drift", "ci"]
+}
