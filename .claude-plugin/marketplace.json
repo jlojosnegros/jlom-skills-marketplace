@@ -15,7 +15,13 @@
       "description": "Adversarially audit a finished report, design doc, PR/MR review, or JIRA analysis before you act on it. Catches fabricated facts, unverified numbers, partially-read or unreliable sources, and self-referential claims (the agent citing its own earlier output as truth).",
       "version": "1.0.0",
       "category": "review",
-      "keywords": ["review", "audit", "verification", "adversarial", "qa"]
+      "keywords": [
+        "review",
+        "audit",
+        "verification",
+        "adversarial",
+        "qa"
+      ]
     },
     {
       "name": "agentdoc",
@@ -23,7 +29,56 @@
       "description": "Generate and maintain AI-agent-oriented documentation for any repository: a lightweight CLAUDE.md plus a deep agent-overlay.md, with drift detection, freshness scoring, and protection for human-written sections.",
       "version": "1.0.0",
       "category": "documentation",
-      "keywords": ["documentation", "claude-md", "agent-overlay", "drift", "ci"]
+      "keywords": [
+        "documentation",
+        "claude-md",
+        "agent-overlay",
+        "drift",
+        "ci"
+      ]
+    },
+    {
+      "name": "code-reviewer",
+      "description": "Multi-phase code review with auto-maintained project conventions",
+      "author": {
+        "name": "OSSM Team"
+      },
+      "category": "review",
+      "keywords": [
+        "code-review",
+        "review-automation",
+        "pr-review"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openshift-service-mesh/ci-utils.git",
+        "path": "plugins/code-reviewer",
+        "ref": "main",
+        "sha": "a609607f6bbb39a250a1ae811d420338ca9a9004"
+      },
+      "homepage": "https://github.com/openshift-service-mesh/ci-utils/tree/main/plugins/code-reviewer"
+    },
+    {
+      "name": "challenge",
+      "description": "Adversarial hypothesis reviewer — systematically attacks theories and root cause analyses to find weaknesses",
+      "author": {
+        "name": "fonta-rh"
+      },
+      "category": "analysis",
+      "keywords": [
+        "adversarial",
+        "challenge",
+        "hypothesis",
+        "review"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openshift-eng/edge-tooling.git",
+        "path": "plugins/challenge",
+        "ref": "main",
+        "sha": "089dd100a22347b3ab15bba174d16a4525b62a1c"
+      },
+      "homepage": "https://github.com/openshift-eng/edge-tooling/tree/main/plugins/challenge"
     }
   ]
 }
